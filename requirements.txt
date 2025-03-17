@@ -12,6 +12,7 @@ openai>=1.5.0
 
 # PDF 보고서 생성
 fpdf>=1.7.2
+reportlab>=3.6.12  # 한글 PDF 생성을 위해 추가
 
 # 환경 변수 로드
 python-dotenv>=1.0.0
@@ -35,3 +36,6 @@ email-validator>=2.0.0
 
 # 테스트 도구 (선택 사항)
 pytest>=7.4.0
+
+# 이미지 처리 및 시각화 관련
+pillow>=9.5.0  # ReportLab에서 이미지 처리에 필요
