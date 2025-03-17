@@ -1,20 +1,21 @@
 # FastAPI 웹 프레임워크 및 서버 실행
-fastapi==0.103.1
-uvicorn==0.22.0
+fastapi>=0.103.1
+uvicorn>=0.22.0
 
 # 데이터 모델 및 데이터 처리
-pydantic==1.10.12
-numpy==1.24.3
-pandas==2.0.3
+pydantic>=2.0
+numpy>=1.24.3
+pandas>=2.0.3
 
 # OpenAI GPT API 사용
-openai==1.5.0
+openai>=1.5.0
 
 # PDF 보고서 생성
-fpdf==1.7.2
+fpdf>=1.7.2
 
 # 환경 변수 로드
-python-dotenv==1.0.0
+python-dotenv>=1.0.0
 
 # 비동기 HTTP 요청 (필요할 경우)
-httpx==0.25.0
+httpx>=0.25.0
+

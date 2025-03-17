@@ -22,11 +22,13 @@ def analyze_credit_info(customer_data: dict, request_text: str):
         """
 
         response = client.chat.completions.create(
-            model="gpt-4o",
+            model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "당신은 금융 전문가입니다."},
                 {"role": "user", "content": prompt}
-            ]
+            ],
+            temperature=0.5,  # 🔹 창의성 조절 (낮을수록 보수적인 응답)
+            max_tokens=500  # 🔹 응답 길이 제한 (짧은 응답을 원할 경우)
         )
 
         return response.choices[0].message.content
